@@ -1,0 +1,35 @@
+import java.util.Scanner;
+import java.util.*;
+import java.io.*;
+import static java.lang.System.*;
+import java.lang.Math;
+
+
+public class DragonDriver {
+  
+  public static void main(String [] args){
+     System.out.println(" Let's Make a Dragon");
+     
+     ArrayList dragon1 = new ArrayList();
+   Dragon number1 = new Dragon();
+   Dragon number2 = new Dragon(false, "Mark", 99, true, "Red");
+   Dragon number3 = new Dragon(true, "Anthony", 6, false, "Blue");
+   Dragon  number4 = new Dragon(true, "Corey", 55, false, "Orange");
+ 
+   
+    System.out.println(number4.toString());
+      System.out.println(" Congratulations, Your Dragon Has Been Completed.\n");
+      System.out.println(" Let's see if there were any changes...");
+    //It increases the heigth of dragon3 "Anthony"
+      
+    number3.growHeigth();
+    number4.growTail();
+    System.out.println();
+    System.out.println(number4.toString());
+    
+    
+     System.out.println(" Congratulations, Your Dragon Has Been Updated.");
+  }
+  
+  
+}
